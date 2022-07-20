@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>BÀI TẬP JAVASCRIP - BUỔI 4</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS v5.2.0-beta1 -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 m-auto">
+					<div class="card">
+						<div class="card-header bg-dark text-light text-center fs-5">
+							Bài tập 1: CHƯƠNG TRÌNH XUẤT RA 3 SỐ - THEO THỨ TỰ TĂNG DẦN
+						</div>
+						<div class="card-body">
+							<div class="row justify-content-center">
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<label for="iNumber_a" class="form-label"
+											>Số thứ nhất</label
+										>
+										<input
+											type="text"
+											name=""
+											id="iNumber_a"
+											class="form-control"
+											placeholder="Nhập vào số 1"
+										/>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<label for="iNumber_b" class="form-label">Số thứ hai</label>
+										<input
+											type="text"
+											name=""
+											id="iNumber_b"
+											class="form-control"
+											placeholder="Nhập vào số 2"
+										/>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<label for="iNumber_c" class="form-label">Số thứ ba</label>
+										<input
+											type="text"
+											name=""
+											id="iNumber_c"
+											class="form-control"
+											placeholder="Nhập vào số 3"
+										/>
+									</div>
+								</div>
+								<button
+									id="btnCalcIncrease"
+									type="button"
+									class="btn btn-success w-25 fs-5"
+								>
+									Sắp xếp
+								</button>
+							</div>
+						</div>
+						<div class="card-footer text-muted">
+							<p id="showResultIncrease" class="fs-6"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- BÀI TẬP 2: -->
+			<div class="row mt-5">
+				<div class="col-md-8 m-auto">
+					<div class="card">
+						<div class="card-header bg-dark text-light text-center fs-5">
+							Bài tập 2: CHƯƠNG TRÌNH CHÀO HỎI CÁC THÀNH VIÊN TRONG GIA ĐÌNH
+						</div>
+						<div class="card-body">
+							<div class="row justify-content-center">
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<select class="form-select" id="personsFamily">
+											<option selected>Chọn Thành viên</option>
+											<option value="father">Bố</option>
+											<option value="mother">Mẹ</option>
+											<option value="brother">Anh Trai</option>
+											<option value="sister">Em Gái</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<button
+										id="btnSayHello"
+										type="button"
+										class="btn btn-success"
+									>
+										Gởi Lời Chào
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer text-muted text-center">
+							<p id="showResultPersonFamily" class="fs-6 mt-2"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- BÀI TẬP 3: ĐẾM SỐ CHẲN LẼ -->
+			<div class="row mt-5">
+				<div class="col-md-10 m-auto">
+					<div class="card">
+						<div class="card-header bg-dark text-light text-center fs-5">
+							Bài tập 3: CHƯƠNG TRÌNH ĐẾM SỐ CHẲN LẼ
+						</div>
+						<div class="card-body">
+							<div class="row justify-content-center">
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<label for="iNumber_1" class="form-label"
+											>Số thứ nhất</label
+										>
+										<input
+											type="text"
+											name=""
+											id="iNumber_1"
+											class="form-control"
+											placeholder="Nhập vào số 1"
+										/>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<label for="iNumber_2" class="form-label">Số thứ hai</label>
+										<input
+											type="text"
+											name=""
+											id="iNumber_2"
+											class="form-control"
+											placeholder="Nhập vào số 2"
+										/>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<label for="iNumber_3" class="form-label">Số thứ ba</label>
+										<input
+											type="text"
+											name=""
+											id="iNumber_3"
+											class="form-control"
+											placeholder="Nhập vào số 3"
+										/>
+									</div>
+								</div>
+								<button
+									id="btnCheckEvenOdd"
+									type="button"
+									class="btn btn-success w-50 fs-5"
+								>
+									Kiểm tra
+								</button>
+							</div>
+						</div>
+						<div class="card-footer text-muted">
+							<p id="showResultEvenOdd" class="fs-6"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- BÀI TẬP 4: ĐOÁN TAM GIÁC -->
+			<div class="row my-5">
+				<div class="col-md-10 m-auto">
+					<div class="card">
+						<div class="card-header bg-dark text-light text-center fs-5">
+							Bài tập 4: CHƯƠNG TRÌNH ĐOÁN TAM GIÁC
+						</div>
+						<div class="card-body">
+							<div class="row justify-content-center">
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<label for="iCanh_a" class="form-label"
+											>Cạnh thứ nhất</label
+										>
+										<input
+											type="text"
+											name=""
+											id="iCanh_a"
+											class="form-control"
+											placeholder="Nhập vào cạnh a"
+										/>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<label for="iCanh_b" class="form-label">Cạnh thứ hai</label>
+										<input
+											type="text"
+											name=""
+											id="iCanh_b"
+											class="form-control"
+											placeholder="Nhập vào cạnh b"
+										/>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group mb-3">
+										<label for="iCanh_c" class="form-label">Cạnh thứ ba</label>
+										<input
+											type="text"
+											name=""
+											id="iCanh_c"
+											class="form-control"
+											placeholder="Nhập vào cạnh c"
+										/>
+									</div>
+								</div>
+								<button
+									id="btnGuessTriangle"
+									type="button"
+									class="btn btn-success w-50 fs-5"
+								>
+									Kiểm tra Hình Tam Giác
+								</button>
+							</div>
+						</div>
+						<div class="card-footer text-muted">
+							<p id="showResultTriangle" class="fs-6"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap JavaScript Libraries -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+			integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+			integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
